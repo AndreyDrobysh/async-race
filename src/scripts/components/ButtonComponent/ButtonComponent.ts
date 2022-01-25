@@ -8,4 +8,8 @@ export default class ButtonComponent extends BaseComponent<HTMLButtonElement> {
       this.element.innerHTML = text;
     }
   }
+
+  onClick(cb: (e?:Event) => void) {
+    this.element.addEventListener('click', cb);
+  }
 }

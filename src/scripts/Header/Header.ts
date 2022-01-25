@@ -24,11 +24,11 @@ export default class Header extends BaseComponent {
     container.addChild(headerNav);
     this.headerNav = headerNav;
 
-    const garageBtn = new ButtonComponent(['open-garage'], 'Garage');
+    const garageBtn = new ButtonComponent(['open-garage', 'text_btn'], 'to Garage');
     headerNav.addChild(garageBtn);
     this.garageBtn = garageBtn;
 
-    const winnersBtn = new ButtonComponent(['open-winners'], 'Winners');
+    const winnersBtn = new ButtonComponent(['open-winners', 'text_btn'], 'to Winners');
     headerNav.addChild(winnersBtn);
     this.winnersBtn = winnersBtn;
   }
